@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".KodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvMasukID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLogo"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Masukkan ID"/>
+
+        <EditText
+            android:id="@+id/edtMasukID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMasukID"
+            android:lines="1"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/rounded_edt" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_below="@id/edtMasukID"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/orange"
+            android:textSize="20sp"
+            android:text="Masuk"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

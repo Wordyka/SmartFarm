@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/green"
+    android:background="@color/white"
+    tools:context=".BerandaFragment">
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdTop"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:backgroundTint="@color/green">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/bg_icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tvSelamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTani"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSelamat"
+                    android:layout_marginTop="10dp"
+                    android:text="Tani Hebat bersama Smart Farm"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdBelow"
+            android:layout_width="match_parent"
+            android:layout_height="417dp"
+            android:layout_below="@id/cdTop"
+            android:background="@drawable/rounded_cd"
+            app:cardCornerRadius="25dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/rvArtikel"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                    tools:listitem="@layout/item_artikel" />-->
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/orange"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivArtikel1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@drawable/artikel"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@+id/tvArtikel1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivArtikel1"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Bagaimana cara identifikasi padi?"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/orange"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivArtikel2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@drawable/artikel"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@+id/tvArtikel2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivArtikel2"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Bagaimana cara identifikasi padi?"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/orange"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivArtikel3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@drawable/artikel"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@+id/tvArtikel3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivArtikel3"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Bagaimana cara identifikasi padi?"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/orange"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivArtikel4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@drawable/artikel"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@+id/tvArtikel4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivArtikel4"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Bagaimana cara identifikasi padi?"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/orange"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivArtikel5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@drawable/artikel"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@+id/tvArtikel5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivArtikel5"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Bagaimana cara identifikasi padi?"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hsv"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:id="@+id/tvRiwayat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Riwayat"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvRiwayat"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="15dp"
+                            android:backgroundTint="@color/green"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp">
+
+
+                                <TextView
+                                    android:id="@+id/tvJudul"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Riwayat Deteksi"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvSubJudul"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvJudul"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:maxLines="3"
+                                    android:text="Jenis Padi: Padi merah"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rlCalender"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvSubJudul"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/icCalender"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_calender" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_toEndOf="@id/icCalender"
+                                        android:text="06/05/2024"
+                                        android:textColor="@color/white" />
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/rlTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rlCalender"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/icTime"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_toEndOf="@id/icTime"
+                                        android:text="14 : 45"
+                                        android:textColor="@color/white" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
